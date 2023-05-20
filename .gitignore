@@ -3,3 +3,6 @@ node_modules
 index2.js
 index3.js
 index4.js
+password.txt
+data.json
+.gitignore
