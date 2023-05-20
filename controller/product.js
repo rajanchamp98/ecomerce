@@ -1,4 +1,4 @@
-import { readFileSync } from "fs";
+// import { readFileSync } from "fs";
 import Product from '../model/product.js'
 
 // const data = JSON.parse(readFileSync("data.json", "utf-8"));
