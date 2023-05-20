@@ -10,14 +10,15 @@
     }
   ],
   "routes": [
+    
+    {
+      "src":"/products",
+      "dest":"index.js"
+    },
     {
       "src": "/products/(.*)",
       "dest": "index.js"
-    },{
-      "src":"/products",
-      "dest":"index.js"
-    }
-    ,
+    },
     {
       "src":"/",
       "dest":"dist/index.html"
