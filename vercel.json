@@ -13,23 +13,23 @@
     
     {
       "src":"/products",
-      "dest":"index.js"
+      "dest":"./index.js"
     },
     {
       "src": "/products/(.*)",
-      "dest": "index.js"
+      "dest": "./index.js"
     },
     {
       "src":"/",
-      "dest":"dist/index.html"
+      "dest":"./dist/index.html"
     },
     {
       "src":"/addProduct",
-      "dest":"dist/index.html"
+      "dest":"./dist/index.html"
     },
     {
       "src":"/(.+)",
-      "dest":"dist/$1"
+      "dest":"./dist/$1"
     }
   ]
  
