@@ -1,8 +1,8 @@
 import { readFileSync } from "fs";
 import Product from '../model/product.js'
 
-const data = JSON.parse(readFileSync("data.json", "utf-8"));
-const products = data.products; 
+// const data = JSON.parse(readFileSync("data.json", "utf-8"));
+// const products = data.products; 
 
 
 // All Logic Related to CRUD are Written Here This is Controller 
