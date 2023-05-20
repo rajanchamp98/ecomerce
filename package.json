@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "RestAPI Creation with methods like get post put patch delete",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm index.js",
+    "dev2": "nodemon index2.js",
+    "dev3": "nodemon index3.js",
+    "dev": "nodemon index.js",
+    "dev4": "nodemon index4.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajan Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.1.1"
+  }
+}
