@@ -4,7 +4,6 @@ import cors from 'cors';
  
 import express from "express";
 import mongoose from 'mongoose'
-import { Schema } from 'mongoose';
 import path,{dirname} from 'path'
 // import {getProduct,getProductWithId,createProduct,updateProducts,modifyProduct,deleteProduct} from './controller/product.js';
 import {productRouter} from "./Router/Router.js"
@@ -12,7 +11,7 @@ import {productRouter} from "./Router/Router.js"
 import { fileURLToPath } from 'url';
 
 const __dirname=dirname(fileURLToPath(import.meta.url))
-console.log(__dirname);
+// console.log(__dirname);
 
 // import { readFileSync } from "fs";
 
@@ -74,7 +73,7 @@ main().catch(err => console.log(err));
 
 async function main() {
   await mongoose.connect(process.env.CONNECTION);
-  console.log("Database Connected Sucessfully :")
+  // console.log("Database Connected Sucessfully :")
 }
 
 // Schema Creation :-
@@ -112,7 +111,7 @@ const server = express();
 
 server.use(express.json());
 server.use(cors())
-server.use(express.static(path.resolve(process.env.build)))
+server.use(express.static(path.resolve(process.env.BUILD)))
 server.use("/products",productRouter); 
 
 // Wild card to acces Routes of Frontend Part 
