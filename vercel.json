@@ -28,6 +28,14 @@
       "dest":"dist/index.html"
     },
     {
+      "src":"/users",
+      "dest":"index.js"
+    },
+    {
+      "src":"/users/(.*)",
+      "dest":"index.js"
+    },
+    {
       "src":"/(.+)",
       "dest":"dist/$1"
     }

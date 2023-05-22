@@ -6,7 +6,7 @@ import express from "express";
 import mongoose from 'mongoose'
 import path,{dirname} from 'path'
 // import {getProduct,getProductWithId,createProduct,updateProducts,modifyProduct,deleteProduct} from './controller/product.js';
-import {productRouter} from "./Router/Router.js"
+import {productRouter,userRouter} from "./Router/Router.js"
 
 import { fileURLToPath } from 'url';
 
@@ -69,7 +69,7 @@ const __dirname=dirname(fileURLToPath(import.meta.url))
 // Database Connection
 
 
-main().catch(err => console.log(err));
+main().catch(err => onsole.log(err));
 
 async function main() {
   await mongoose.connect(process.env.CONNECTION);
@@ -111,8 +111,9 @@ const server = express();
 
 server.use(express.json());
 server.use(cors())
-server.use(express.static(path.resolve(process.env.BUILD)))
+// server.use(express.static(path.resolve(process.env.BUILD)))
 server.use("/products",productRouter); 
+server.use("/users",userRouter); 
 
 // Wild card to acces Routes of Frontend Part 
 server.use("*",(req,res)=>{

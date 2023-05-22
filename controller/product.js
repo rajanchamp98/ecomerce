@@ -45,7 +45,7 @@ const getProduct = async (req, res) => {
     // products.splice(indexPrd, 1, prdToAdd);
     // res.sendStatus(201);
     const replacedValue=await Product.replaceOne({"id":+id},prdToAdd)
-    console.log(replacedValue);
+    // console.log(replacedValue);
     res.send(replacedValue);
   };
   const modifyProduct = async(req, res) => {
@@ -67,7 +67,7 @@ const getProduct = async (req, res) => {
     // res.send(del);
     // console.log(_id)
     const returnedValue=await Product.findByIdAndDelete({"_id":_id})
-    // res.send(returnedValue);
+    res.send(returnedValue);
 
 
 
