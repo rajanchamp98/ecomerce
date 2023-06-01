@@ -19,7 +19,7 @@ const getProduct = async (req, res) => {
     // });
     // res.json(product);
     // console.log(req.params.id);
-    const product= await Product.findOne({_id:+req.params.id})
+    const product= await Product.findOne({_id:req.params.id})
     res.json(product);
   };
   
